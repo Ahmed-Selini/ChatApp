@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CodeVerificationActivity"> <ImageView
+    android:id="@+id/blob_top"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@drawable/bg_header"
+    android:contentDescription="top decorative wave"
+    android:src="@drawable/blob_top"
+    android:scaleType="centerCrop"
+    app:layout_constraintDimensionRatio="2:1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Code Verification"
+        android:textColor="@color/text_black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blob_top" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Enter the 6-digit code sent to your email"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleVerification" />
+
+    <TextView
+        android:id="@+id/tvCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Verification Code"
+        android:textColor="@color/text_black"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="@id/layoutOtp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+    <LinearLayout
+        android:id="@+id/layoutOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCodeLabel">
+
+        <EditText
+            android:id="@+id/etOtp1"
+            style="@style/OtpBoxStyle"
+            tools:text="1" />
+        <EditText
+            android:id="@+id/etOtp2"
+            style="@style/OtpBoxStyle"
+            tools:text="2" />
+        <EditText
+            android:id="@+id/etOtp3"
+            style="@style/OtpBoxStyle"
+            tools:text="3" />
+        <EditText
+            android:id="@+id/etOtp4"
+            style="@style/OtpBoxStyle"
+            tools:text="4" />
+        <EditText
+            android:id="@+id/etOtp5"
+            style="@style/OtpBoxStyle"
+            tools:text="5" />
+        <EditText
+            android:id="@+id/etOtp6"
+            style="@style/OtpBoxStyle"
+            tools:text="6" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Didn't receive the code? Resend"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/layoutOtp"
+        app:layout_constraintTop_toBottomOf="@id/layoutOtp" />
+
+    <TextView
+        android:id="@+id/tvVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Verify Code"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnVerify"
+        app:layout_constraintEnd_toStartOf="@id/btnVerify" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerify"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/purple_button"
+        app:cornerRadius="32dp"
+        app:icon="@drawable/ic_arrow"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResend" /> <ImageView
+        android:id="@+id/blob_bottom"
+        android:layout_width="90dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="-40dp"
+        android:contentDescription="bottom decorative wave"
+        android:rotation="0"
+        android:src="@drawable/blob_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Cancel and go back to Login"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

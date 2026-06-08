@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Chat Project</string>
+    <string name="logo_desc">Logo de application</string>
+    <string name="search">Search</string>
+    <string name="top_decorative_wave">Top decorative wave</string>
+    <string name="create">Create</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_button">Create Account Button</string>
+    <string name="bottom_decorative_wave">Bottom decorative wave</string>
+    <string name="already_have_account">Already have an account? Login in</string>
+    <string name="hello">Hello</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="username">Username</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account_create">Don\'t have an account? Create</string>
+    <string name="Resedon_t_have_an_account_create">Don\'t have an account? Create</string>
+    <string name="profile_option_default">Option Title</string>
+    <string name="cd_info_button" />
+    <string name="cd_menu_button" />
+    <string name="cd_back_button" />
+    <string name="channel_name">Messages de Chat</string>
+    <string name="channel_description">Notifications pour les nouveaux messages reçus.</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_chatlina"
+        android:label="ChatLina"
+        android:roundIcon="@drawable/logo_chatlina"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChatProject">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".DMActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".CodeVerificationActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".UserSearchActivity" />
+        <activity android:name=".MessageListActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".BlockedUsersActivity" />
+        <activity android:name=".FriendRequestsActivity" />
+        <activity android:name=".SentRequestsActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".AddAccountActivity" />
+
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" android:exported="true">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>

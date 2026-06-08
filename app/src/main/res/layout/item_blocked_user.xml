@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/blocked_profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_profile_girl" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/blocked_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'utilisateur"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/blocked_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloqué"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_unblock"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_unblock"
+        android:contentDescription="Débloquer l'utilisateur"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+         />
+
+</LinearLayout>

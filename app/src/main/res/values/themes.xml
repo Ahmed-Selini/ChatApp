@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Theme -->
+    <style name="Base.Theme.ChatProject" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Colors principaux -->
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+
+
+        <!-- Pour les TextInputLayout et MaterialButton -->
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+
+        <!-- Pas d’action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+
+    </style>
+
+    <style name="Theme.ChatProject" parent="Base.Theme.ChatProject" />
+
+    <style name="OtpBoxStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/otp_box_background</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,13 @@
+<!-- res/drawable/bubble_sent_blue.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#1A73E8"/> <!-- The blue color (self-blue in your HTML) -->
+
+    <corners
+        android:topLeftRadius="16dp"
+    android:topRightRadius="16dp"
+    android:bottomLeftRadius="16dp"
+    android:bottomRightRadius="4dp" />
+
+</shape>
