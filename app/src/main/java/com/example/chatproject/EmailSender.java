@@ -12,10 +12,10 @@ import javax.mail.internet.MimeMessage;
 
 public class EmailSender {
 
-    private static final String HOST_EMAIL = "ahmedsilini47@gmail.com";
-    private static final String HOST_PASSWORD = "fesh wtyd hqrn katd";
+    private static final String HOST_EMAIL = "";
+    private static final String HOST_PASSWORD = "";
     private static final String SMTP_HOST = "smtp.gmail.com";
-    private static final String SMTP_PORT = "587";
+    private static final String SMTP_PORT = "";
 
     public static boolean sendEmail(String recipient, String subject, String body) {
 
